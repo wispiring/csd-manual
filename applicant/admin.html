@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script>
+    function fixFrameLength(element) {
+        console.log( window.screen.availHeight);
+        element.style.height = (window.screen.availHeight)+'px';
+    }
+    </script>
+    <title>CSD community 使用手册</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-4">
+                <iframe src="../catalog/admin.html" onload="fixFrameLength(this)" name="left" frameborder="0" scrolling="no" width="100%"></iframe>
+            </div>
+            <div class="col-lg-9 col-md-8 col-sm-8">
+                <iframe src="../admin/patientInfo.html" onload="fixFrameLength(this)" name="right" frameborder="0" width="100%"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
